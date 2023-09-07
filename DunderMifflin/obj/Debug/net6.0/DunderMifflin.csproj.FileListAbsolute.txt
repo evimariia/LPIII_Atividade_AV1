@@ -12,3 +12,17 @@ C:\Users\evila\source\repos\DunderMifflin\DunderMifflin\obj\Debug\net6.0\refint\
 C:\Users\evila\source\repos\DunderMifflin\DunderMifflin\obj\Debug\net6.0\DunderMifflin.pdb
 C:\Users\evila\source\repos\DunderMifflin\DunderMifflin\obj\Debug\net6.0\DunderMifflin.genruntimeconfig.cache
 C:\Users\evila\source\repos\DunderMifflin\DunderMifflin\obj\Debug\net6.0\ref\DunderMifflin.dll
+C:\Users\evila\OneDrive\Documentos\LP3\LPIII_Atividade_AV1\DunderMifflin\bin\Debug\net6.0\DunderMifflin.exe
+C:\Users\evila\OneDrive\Documentos\LP3\LPIII_Atividade_AV1\DunderMifflin\bin\Debug\net6.0\DunderMifflin.deps.json
+C:\Users\evila\OneDrive\Documentos\LP3\LPIII_Atividade_AV1\DunderMifflin\bin\Debug\net6.0\DunderMifflin.runtimeconfig.json
+C:\Users\evila\OneDrive\Documentos\LP3\LPIII_Atividade_AV1\DunderMifflin\bin\Debug\net6.0\DunderMifflin.dll
+C:\Users\evila\OneDrive\Documentos\LP3\LPIII_Atividade_AV1\DunderMifflin\bin\Debug\net6.0\DunderMifflin.pdb
+C:\Users\evila\OneDrive\Documentos\LP3\LPIII_Atividade_AV1\DunderMifflin\obj\Debug\net6.0\DunderMifflin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\evila\OneDrive\Documentos\LP3\LPIII_Atividade_AV1\DunderMifflin\obj\Debug\net6.0\DunderMifflin.AssemblyInfoInputs.cache
+C:\Users\evila\OneDrive\Documentos\LP3\LPIII_Atividade_AV1\DunderMifflin\obj\Debug\net6.0\DunderMifflin.AssemblyInfo.cs
+C:\Users\evila\OneDrive\Documentos\LP3\LPIII_Atividade_AV1\DunderMifflin\obj\Debug\net6.0\DunderMifflin.csproj.CoreCompileInputs.cache
+C:\Users\evila\OneDrive\Documentos\LP3\LPIII_Atividade_AV1\DunderMifflin\obj\Debug\net6.0\DunderMifflin.dll
+C:\Users\evila\OneDrive\Documentos\LP3\LPIII_Atividade_AV1\DunderMifflin\obj\Debug\net6.0\refint\DunderMifflin.dll
+C:\Users\evila\OneDrive\Documentos\LP3\LPIII_Atividade_AV1\DunderMifflin\obj\Debug\net6.0\DunderMifflin.pdb
+C:\Users\evila\OneDrive\Documentos\LP3\LPIII_Atividade_AV1\DunderMifflin\obj\Debug\net6.0\DunderMifflin.genruntimeconfig.cache
+C:\Users\evila\OneDrive\Documentos\LP3\LPIII_Atividade_AV1\DunderMifflin\obj\Debug\net6.0\ref\DunderMifflin.dll

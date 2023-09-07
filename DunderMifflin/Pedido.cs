@@ -23,9 +23,11 @@ namespace DunderMifflin
         private double quantidade;
         private double valorUnitario;
 
+        private Vendedor vendedor;
+
         public Pedido(double numPedido, string nomeCliente, double cadastroCliente, string telefoneCliente, 
             string emailCliente, string enderecoCliente, double valorPedido, string dataEntrega, string dataPedido, 
-            double desconto, string formaPagamento, string produto, double quantidade, double valorUnitario)
+            double desconto, string formaPagamento, string produto, double quantidade, double valorUnitario, Vendedor vendedor)
         {
             this.numPedido = numPedido;
             this.nomeCliente = nomeCliente;
@@ -41,6 +43,8 @@ namespace DunderMifflin
             this.produto = produto;
             this.quantidade = quantidade;
             this.valorUnitario = valorUnitario;
+
+            this.vendedor = vendedor;
         }
 
         public double NumPedido { get => numPedido; set => numPedido = value; }
@@ -66,6 +70,7 @@ namespace DunderMifflin
         public override string ToString()
         {
             return $"Número do Pedido: {numPedido}\n" +
+                   $"Vendedor: {vendedor}\n"+
                    $"Nome do Cliente: {nomeCliente}\n" +
                    $"Cadastro do Cliente: {cadastroCliente}\n" +
                    $"Telefone do Cliente: {telefoneCliente}\n" +
