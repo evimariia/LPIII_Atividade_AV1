@@ -9,6 +9,9 @@ namespace DunderMifflin
     internal class Pedido
     {
         private double numPedido;
+        private string nomeVendedor;
+        private double cadastroVendedor;
+        private string telefoneVendedor;
         private string nomeCliente;
         private double cadastroCliente;
         private string telefoneCliente;
@@ -23,11 +26,15 @@ namespace DunderMifflin
         private double quantidade;
         private double valorUnitario;
 
-        public Pedido(double numPedido, string nomeCliente, double cadastroCliente, string telefoneCliente, 
-            string emailCliente, string enderecoCliente, double valorPedido, string dataEntrega, string dataPedido, 
-            double desconto, string formaPagamento, string produto, double quantidade, double valorUnitario)
+        public Pedido(double numPedido, string nomeVendedor, double cadastroVendedor, string telefoneVendedor, 
+            string nomeCliente, double cadastroCliente, string telefoneCliente, string emailCliente, string enderecoCliente, 
+            double valorPedido, string dataEntrega, string dataPedido, double desconto, string formaPagamento, string produto, double quantidade, 
+            double valorUnitario)
         {
             this.numPedido = numPedido;
+            this.nomeVendedor = nomeVendedor;
+            this.cadastroVendedor = cadastroVendedor;
+            this.telefoneVendedor = telefoneVendedor;
             this.nomeCliente = nomeCliente;
             this.cadastroCliente = cadastroCliente;
             this.telefoneCliente = telefoneCliente;
@@ -44,6 +51,9 @@ namespace DunderMifflin
         }
 
         public double NumPedido { get => numPedido; set => numPedido = value; }
+        public string NomeVendedor { get => nomeVendedor; set => nomeVendedor = value; }
+        public double CadastroVendedor { get => cadastroVendedor; set => cadastroVendedor = value; }
+        public string TelefoneVendedor { get => telefoneVendedor; set => telefoneVendedor = value; }
         public string NomeCliente { get => nomeCliente; set => nomeCliente = value; }
         public double CadastroCliente { get => cadastroCliente; set => cadastroCliente = value; }
         public string TelefoneCliente { get => telefoneCliente; set => telefoneCliente = value; }
@@ -66,6 +76,9 @@ namespace DunderMifflin
         public override string ToString()
         {
             return $"Número do Pedido: {numPedido}\n" +
+                   $"Nome do Vendedor: {nomeVendedor}\n" +
+                   $"Cadastro do Vendedor: {cadastroVendedor}\n" +
+                   $"Telefone do Vendedor: {telefoneVendedor}\n" +
                    $"Nome do Cliente: {nomeCliente}\n" +
                    $"Cadastro do Cliente: {cadastroCliente}\n" +
                    $"Telefone do Cliente: {telefoneCliente}\n" +
