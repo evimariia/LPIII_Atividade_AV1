@@ -25,12 +25,9 @@ namespace DunderMifflin
 
         public override string ToString()
         {
-            return base.ToString();
-            /*             
-                   $"Nome do Vendedor: {nomeVendedor}\n" +
-                   $"Cadastro do Vendedor: {cadastroVendedor}\n" +
-                   $"Telefone do Vendedor: {telefoneVendedor}\n" +
-             */
+            return $"Nome do Vendedor: {nome}\n" +
+                   $"Cadastro do Vendedor: {cadastro}\n" +
+                   $"Telefone do Vendedor: {telefone}\n";
         }
     }
 }
