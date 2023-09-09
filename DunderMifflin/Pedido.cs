@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DunderMifflin.interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,21 +10,20 @@ namespace DunderMifflin
     internal class Pedido
     {
         private double numPedido;
-        private double valorPedido;
         private string dataEntrega;
         private string dataPedido;
         private double desconto;
         private string formaPagamento;
         private double quantidade;
 
-        private Vendedor vendedor;
-        private Cliente cliente;
+        private IVendedor vendedor;
+        private ICliente cliente;
+        private IProduto produto;
 
-        public Pedido(double numPedido, double valorPedido, string dataEntrega, string dataPedido, 
+        public Pedido(double numPedido, string dataEntrega, string dataPedido, 
             double desconto, string formaPagamento, double quantidade, Vendedor vendedor)
         {
             this.numPedido = numPedido;
-            this.valorPedido = valorPedido;
             this.dataEntrega = dataEntrega;
             this.dataPedido = dataPedido;
             this.desconto = desconto;
@@ -34,7 +34,6 @@ namespace DunderMifflin
         }
 
         public double NumPedido { get => numPedido; set => numPedido = value; }
-        public double ValorPedido { get => valorPedido; set => valorPedido = value; }
         public string DataEntrega { get => dataEntrega; set => dataEntrega = value; }
         public string DataPedido { get => dataPedido; set => dataPedido = value; }
         public double Desconto { get => desconto; set => desconto = value; }
@@ -43,7 +42,7 @@ namespace DunderMifflin
         
         public void setValorPedido()
         {
-            valorPedido = (valorUnitario*quantidade)-desconto;
+            double valorPedido = (double)((produto.Valor * quantidade) - desconto);
         }
 
         public override string ToString()
