@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\obj"
   ],
-  "SelectedNode": "\\Cliente.cs",
+  "SelectedNode": "\\Pedido.cs",
   "PreviewInSolutionExplorer": false
 }

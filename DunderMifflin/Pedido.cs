@@ -14,15 +14,13 @@ namespace DunderMifflin
         private string dataPedido;
         private double desconto;
         private string formaPagamento;
-        private string produto;
         private double quantidade;
-        private double valorUnitario;
 
         private Vendedor vendedor;
         private Cliente cliente;
 
         public Pedido(double numPedido, double valorPedido, string dataEntrega, string dataPedido, 
-            double desconto, string formaPagamento, string produto, double quantidade, double valorUnitario, Vendedor vendedor)
+            double desconto, string formaPagamento, double quantidade, Vendedor vendedor)
         {
             this.numPedido = numPedido;
             this.valorPedido = valorPedido;
@@ -30,9 +28,7 @@ namespace DunderMifflin
             this.dataPedido = dataPedido;
             this.desconto = desconto;
             this.formaPagamento = formaPagamento;
-            this.produto = produto;
             this.quantidade = quantidade;
-            this.valorUnitario = valorUnitario;
 
             this.vendedor = vendedor;
         }
@@ -43,10 +39,8 @@ namespace DunderMifflin
         public string DataPedido { get => dataPedido; set => dataPedido = value; }
         public double Desconto { get => desconto; set => desconto = value; }
         public string FormaPagamento { get => formaPagamento; set => formaPagamento = value; }
-        public string Produto { get => produto; set => produto = value; }
         public double Quantidade { get => quantidade; set => quantidade = value; }
-        public double ValorUnitario { get => valorUnitario; set => valorUnitario = value; }
-
+        
         public void setValorPedido()
         {
             valorPedido = (valorUnitario*quantidade)-desconto;
@@ -62,9 +56,7 @@ namespace DunderMifflin
                    $"Data do Pedido: {dataPedido}\n" +
                    $"Desconto: {desconto}\n" +
                    $"Forma de Pagamento: {formaPagamento}\n" +
-                   $"Produto: {produto}\n" +
-                   $"Quantidade: {quantidade}\n" +
-                   $"Valor Unitário: {valorUnitario}\n";
+                   $"Quantidade: {quantidade}\n";
         }
 
     }
