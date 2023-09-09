@@ -24,7 +24,7 @@ namespace DunderMifflin
             this.endereco = endereco;
         }
 
-        public double? Cadastro { get => cadastro; set => cadastro = value; }
+        public double? Cadastro { get => cadastro; set => cadastro = (double)value; }
         public string? Nome { get => nome; set => nome = value; }
         public string? Telefone { get => telefone; set => telefone = value; }
         public string? Email { get => email; set => email = value; }
