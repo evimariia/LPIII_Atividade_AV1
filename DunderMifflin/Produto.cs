@@ -20,5 +20,11 @@ namespace DunderMifflin
 
         public string? Descricao { get => descricao; set => descricao = value; }
         public double? Valor { get => valor; set => valor = (double)value; }
+
+        public override string ToString()
+        {
+           return $"{descricao}\n" +
+                  $"Preço unitário: {valor}\n";
+        }
     }
 }

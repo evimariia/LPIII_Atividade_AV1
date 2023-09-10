@@ -11,38 +11,32 @@ namespace DunderMifflin
     {
         private double numPedido;
         private string dataEntrega;
-        private string dataPedido;
         private double desconto;
-        private string formaPagamento;
         private double quantidade;
 
         private IVendedor vendedor;
         private ICliente cliente;
         private IProduto produto;
 
-        public Pedido(double numPedido, string dataEntrega, string dataPedido, 
-            double desconto, string formaPagamento, double quantidade, Vendedor vendedor)
+        public Pedido(double numPedido, string dataEntrega, double desconto, double quantidade, IVendedor vendedor, ICliente cliente, IProduto produto)
         {
             this.numPedido = numPedido;
             this.dataEntrega = dataEntrega;
-            this.dataPedido = dataPedido;
             this.desconto = desconto;
-            this.formaPagamento = formaPagamento;
             this.quantidade = quantidade;
-
             this.vendedor = vendedor;
+            this.cliente = cliente;
+            this.produto = produto;
         }
 
         public double NumPedido { get => numPedido; set => numPedido = value; }
         public string DataEntrega { get => dataEntrega; set => dataEntrega = value; }
-        public string DataPedido { get => dataPedido; set => dataPedido = value; }
         public double Desconto { get => desconto; set => desconto = value; }
-        public string FormaPagamento { get => formaPagamento; set => formaPagamento = value; }
         public double Quantidade { get => quantidade; set => quantidade = value; }
         
-        public void setValorPedido()
+        public double ValorPedido()
         {
-            double valorPedido = (double)((produto.Valor * quantidade) - desconto);
+            return (double)((produto.Valor * quantidade) - desconto);
         }
 
         public override string ToString()
@@ -50,11 +44,10 @@ namespace DunderMifflin
             return $"Número do Pedido: {numPedido}\n" +
                    $"Vendedor-------------\n {vendedor}\n"+
                    $"Cliente-------------\n {cliente}\n"+
-                   $"Valor do Pedido: {valorPedido}\n" +
+                   $"Produto-------------\n {produto}\n" +
+                   $"Valor do Pedido: {ValorPedido}\n" +
                    $"Data de Entrega: {dataEntrega}\n" +
-                   $"Data do Pedido: {dataPedido}\n" +
                    $"Desconto: {desconto}\n" +
-                   $"Forma de Pagamento: {formaPagamento}\n" +
                    $"Quantidade: {quantidade}\n";
         }
 
