@@ -36,7 +36,7 @@ namespace DunderMifflin
         
         public double ValorPedido()
         {
-            return (double)((produto.Valor * quantidade) - desconto);
+            return (double)((produto.Valor * quantidade) * (1 - (desconto/100) ) );
         }
 
         public override string ToString()
