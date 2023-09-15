@@ -42,13 +42,13 @@ namespace DunderMifflin
         public override string ToString()
         {
             return $"Número do Pedido: {numPedido}\n" +
-                   $"Vendedor-------------\n {vendedor}\n"+
-                   $"Cliente-------------\n {cliente}\n"+
-                   $"Produto-------------\n {produto}\n" +
-                   $"Valor do Pedido: {ValorPedido}\n" +
+                   $"Vendedor -------------\n{vendedor}\n"+
+                   $"Cliente --------------\n{cliente}\n"+
+                   $"Produto: {produto}\n" +
+                   $"Valor do Pedido: {ValorPedido()}\n" +
                    $"Data de Entrega: {dataEntrega}\n" +
-                   $"Desconto: {desconto}\n" +
-                   $"Quantidade: {quantidade}\n";
+                   $"Desconto: R${desconto}\n" +
+                   $"Quantidade: {quantidade} pacote(s)";
         }
 
     }

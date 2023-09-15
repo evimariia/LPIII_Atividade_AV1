@@ -26,9 +26,9 @@ namespace DunderMifflin
 
         public override string ToString()
         {
-            return $"Nome do Vendedor: {nome}\n" +
-                   $"Cadastro do Vendedor: {cadastro}\n" +
-                   $"Telefone do Vendedor: {telefone}\n";
+            return $"Nome: {nome}\n" +
+                   $"Cadastro: {cadastro}\n" +
+                   $"Telefone: {telefone}\n";
         }
     }
 }

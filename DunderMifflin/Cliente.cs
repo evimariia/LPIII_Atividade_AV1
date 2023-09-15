@@ -32,11 +32,11 @@ namespace DunderMifflin
 
         public override string ToString()
         {
-            return $"Nome do cliente: {nome}\n" +
-                   $"Cadastro do cliente: {cadastro}\n" +
-                   $"Telefone do cliente: {telefone}\n" +
-                   $"Email do cliente: {email}\n" +
-                   $"Endereço do cliente: {endereco}\n";
+            return $"Nome: {nome}\n" +
+                   $"Cadastro: {cadastro}\n" +
+                   $"Telefone: {telefone}\n" +
+                   $"Email: {email}\n" +
+                   $"Endereço: {endereco}\n";
         }
     }
 }
